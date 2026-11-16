@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Lost &amp; Found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Campus Lost &amp; Found</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#browse">Browse items</a>
+      <a href="#report">Report an item</a>
+      <a href="#how">How it works</a>
+    </nav>
+    <div class="auth">
+      <a class="btn btn-ghost" href="#">Log in</a>
+      <a class="btn btn-primary" href="#">Register</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <h1>Lost something on campus? Check here first.</h1>
+        <p class="lead">Every item reported on campus is listed here. Search by what it is, where it was left, or what kind of item it is.</p>
+
+        <form class="search" action="#" method="get">
+          <div class="field">
+            <label for="type">Status</label>
+            <select id="type" name="type">
+              <option value="">Lost and found</option>
+              <option value="lost">Lost</option>
+              <option value="found">Found</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="category">Category</label>
+            <select id="category" name="category">
+              <option value="">All categories</option>
+              <option>Bags</option>
+              <option>Electronics</option>
+              <option>IDs and cards</option>
+              <option>Clothing</option>
+              <option>Others</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="location">Location</label>
+            <select id="location" name="location">
+              <option value="">Anywhere on campus</option>
+              <option>Library</option>
+              <option>Canteen</option>
+              <option>Gym</option>
+              <option>Building A</option>
+              <option>Computer lab</option>
+            </select>
+          </div>
+          <div class="field field-wide">
+            <label for="q">Keyword</label>
+            <input id="q" name="q" type="search" placeholder="Black backpack, calculator, ID">
+          </div>
+          <button class="btn btn-primary" type="submit">Search items</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="browse" class="section wrap">
+      <div class="section-head">
+        <h2>Recently reported</h2>
+        <p>Showing 6 of 48 open items</p>
+      </div>
+
+      <div class="grid">
+
+        <article class="tag tag-found">
+          <div class="tag-top">Found</div>
+          <div class="tag-body">
+            <h3>Black backpack</h3>
+            <p>Left on a table near the printers. Has a keychain on the zipper.</p>
+            <dl>
+              <dt>Where</dt><dd>Library, 2nd floor</dd>
+              <dt>Date</dt><dd>Nov 9, 2026</dd>
+              <dt>Category</dt><dd>Bags</dd>
+            </dl>
+            <a class="btn btn-primary btn-small" href="#">Claim this item</a>
+          </div>
+        </article>
+
+        <article class="tag tag-lost">
+          <div class="tag-top">Lost</div>
+          <div class="tag-body">
+            <h3>Student ID with blue lanyard</h3>
+            <p>Probably dropped on the way to lunch. Name card is inside the holder.</p>
+            <dl>
+              <dt>Where</dt><dd>Canteen</dd>
+              <dt>Date</dt><dd>Nov 8, 2026</dd>
+              <dt>Category</dt><dd>IDs and cards</dd>
+            </dl>
+            <a class="btn btn-primary btn-small" href="#">I found this</a>
+          </div>
+        </article>
+
+        <article class="tag tag-found">
+          <div class="tag-top">Found</div>
+          <div class="tag-body">
+            <h3>Scientific calculator</h3>
+            <p>Gray case, scratched on the back. Turned in to the staff office.</p>
+            <dl>
+              <dt>Where</dt><dd>Room 204, Building A</dd>
+              <dt>Date</dt><dd>Nov 7, 2026</dd>
+              <dt>Category</dt><dd>Electronics</dd>
+            </dl>
+            <a class="btn btn-primary btn-small" href="#">Claim this item</a>
+          </div>
+        </article>
+
+        <article class="tag tag-lost">
+          <div class="tag-top">Lost</div>
+          <div class="tag-body">
+            <h3>Gray hoodie</h3>
+            <p>Name written on the inside tag. Left after PE class.</p>
+            <dl>
+              <dt>Where</dt><dd>Gym</dd>
+              <dt>Date</dt><dd>Nov 6, 2026</dd>
+              <dt>Category</dt><dd>Clothing</dd>
+            </dl>
+            <a class="btn btn-primary btn-small" href="#">I found this</a>
+          </div>
+        </article>
+
+        <article class="tag tag-found">
+          <div class="tag-top">Found</div>
+          <div class="tag-body">
+            <h3>Green water bottle</h3>
+            <p>Metal bottle with a sticker of a mountain on the side.</p>
+            <dl>
+              <dt>Where</dt><dd>Quadrangle</dd>
+              <dt>Date</dt><dd>Nov 5, 2026</dd>
+              <dt>Category</dt><dd>Others</dd>
+            </dl>
+            <a class="btn btn-primary btn-small" href="#">Claim this item</a>
+          </div>
+        </article>
+
+        <article class="tag tag-lost">
+          <div class="tag-top">Lost</div>
+          <div class="tag-body">
+            <h3>White earbuds case</h3>
+            <p>Case only, with a small crack near the hinge.</p>
+            <dl>
+              <dt>Where</dt><dd>Computer lab</dd>
+              <dt>Date</dt><dd>Nov 4, 2026</dd>
+              <dt>Category</dt><dd>Electronics</dd>
+            </dl>
+            <a class="btn btn-primary btn-small" href="#">I found this</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="report" class="report">
+      <div class="wrap report-inner">
+        <div>
+          <h2>Found or lost an item?</h2>
+          <p>Log in and fill out a short report. Staff will check it before it appears in the public list.</p>
+        </div>
+        <a class="btn btn-primary" href="#">Report an item</a>
+      </div>
+    </section>
+
+    <section id="how" class="section wrap">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>Report the item.</strong> Add a photo, where it was, and when.</li>
+        <li><strong>Staff review the report.</strong> Approved reports go on the public list.</li>
+        <li><strong>Claim with proof.</strong> Describe something only the owner would know.</li>
+        <li><strong>Pick it up.</strong> Show your school ID at the office to get your item back.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>Lost and Found Office</strong>, Student Affairs, Room 101</p>
+      <p>Open Monday to Friday, 8:00 AM to 5:00 PM</p>
+    </div>
+  </footer>
+
+</body>
+</html>
